@@ -1,0 +1,12 @@
+{% load static from staticfiles %}
+<htm>
+	<link rel="stylesheet" href="{% static 'test.css' %}">
+	{% block body %}
+	{% block main %}
+	    {% block content %}
+
+	    {% endblock content %}
+
+	{% endblock main %}
+	{% endblock body %}
+</htm>
